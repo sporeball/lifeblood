@@ -3,6 +3,10 @@ title: lifeblood home
 layout: default
 ---
 # heading 1
+first paragraph
+
+second paragraph
+
 ## heading 2
 ### heading 3
 #### heading 4
