@@ -1,0 +1,11 @@
+title: lifeblood
+description: hyperfocused Jekyll theme for documentation
+encoding: utf-8
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile.lock
