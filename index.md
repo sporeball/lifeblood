@@ -1,6 +1,6 @@
 ---
 title: lifeblood home
-layout: default
+layout: page
 ---
 # heading 1
 first paragraph

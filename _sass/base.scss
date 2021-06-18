@@ -7,9 +7,13 @@
 
 body {
   margin:0 auto;
-  max-width:1000px;
   background-color:#f9f9f9;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
   color:#363636;
   line-height:1.4
+}
+
+main {
+  margin:20px auto;
+  max-width:1000px
 }
