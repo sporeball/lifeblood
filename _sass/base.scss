@@ -14,7 +14,29 @@ body {
 }
 
 main {
+  display:flex;
+  flex-wrap:wrap;
   margin:20px auto;
-  padding:0 15px 1rem 15px;
   max-width:1000px
+}
+
+.main, .sidebar {
+  position:relative;
+  padding:0 15px 1rem 15px
+}
+
+.main {
+  width:75%
+}
+
+.sidebar {
+  width:25%;
+  background-color:#e9e9e9
+}
+
+@media (max-width:768px) {
+  .main, .sidebar {
+    margin:0 auto;
+    width:100%
+  }
 }
