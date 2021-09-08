@@ -1,7 +1,8 @@
-{%- if site.footer -%}
+{%- if site.footer_left or site.footer_right -%}
 <footer>
 <div class="footer">
-<small>{{ site.footer }}</small>
+<small class="left">{{ site.footer_left }}</small>
+<small class="right">{{ site.footer_right }}</small>
 </div>
 </footer>
 {%- endif -%}

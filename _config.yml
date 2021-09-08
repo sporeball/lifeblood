@@ -10,4 +10,5 @@ exclude:
   - LICENSE
   - Gemfile.lock
 
-footer: "(c) 2021 <a href='https://sporeball.dev' target='_blank'>sporeball</a>"
+footer_left: "made with <span class='love'>&lt;3</span> by <a href='https://sporeball.dev' target='_blank'>sporeball</a>"
+footer_right: "&copy; 2021"
