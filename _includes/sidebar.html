@@ -1,2 +1,12 @@
 <div class="sidebar">
+
+<ul>
+  {%- assign titled_pages = site.html_pages | where_exp: "item", "item.title != nil" -%}
+  {%- assign ordered_pages = titled_pages | sort: "nav_order" -%}
+
+  {%- for page in ordered_pages -%}
+  <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+  {%- endfor -%}
+</ul>
+
 </div>
