@@ -10,5 +10,13 @@ exclude:
   - LICENSE
   - Gemfile.lock
 
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
 footer_left: "made with <span class='love'>&lt;3</span> by <a href='https://sporeball.dev' target='_blank'>sporeball</a>"
 footer_right: "&copy; 2021"
