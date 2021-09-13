@@ -1,7 +1,7 @@
 <div class="sidebar">
   <nav>
     <ul>
-    {%- assign titled_pages = site.html_pages | where_exp: "item", "item.title != nil" -%}
+    {%- assign titled_pages = site.html_pages | where_exp: "item", "item.title != nil and item.title != 404" -%}
     {%- assign ordered_pages = titled_pages | sort: "nav_order" -%}
 
     {%- for page in ordered_pages -%}
