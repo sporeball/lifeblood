@@ -5,8 +5,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-size:2rem;
-  font-weight:700
+  font-weight:700;
+  font-size:2rem
 }
 
 h2 {
@@ -22,7 +22,7 @@ h4 {
 }
 
 h5, h6 {
-  font-size:0.9rem;
+  font-size:0.9rem
 }
 
 h6 {
@@ -35,8 +35,8 @@ small {
 }
 
 a {
-  color:#0076d1;
-  text-decoration:none
+  text-decoration:none;
+  color:#0076d1
 }
 
 a:hover {
