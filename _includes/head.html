@@ -3,6 +3,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
-  {% include inline.html %}
   <link rel="stylesheet" href="{{ '/assets/lifeblood.css' | relative_url }}">
+ 
+  {%- if site.fonts -%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ site.fonts | join: '&family=' }}&display=swap">
+  {%- endif -%}
+  {%- if site.custom -%}
+  <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
+  {%- endif -%}
 </head>
