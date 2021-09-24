@@ -6,18 +6,15 @@
 }
 
 body {
+  flex-wrap:wrap;
+  display:flex;
   margin:0 auto;
+  margin:20px auto;
+  max-width:1000px;
   background-color:#f9f9f9;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
   line-height:1.4;
   color:#363636
-}
-
-body {
-  flex-wrap:wrap;
-  display:flex;
-  margin:20px auto;
-  max-width:1000px
 }
 
 .main, .sidebar {
@@ -35,6 +32,14 @@ body {
   height:min-content;
   padding:0.75rem;
   background-color:#e9e9e9
+}
+
+footer {
+  overflow:auto;
+  margin:0 auto;
+  max-width:1000px;
+  padding-top:4rem;
+  color:#888
 }
 
 @media (max-width:768px) {
