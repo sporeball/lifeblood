@@ -5,16 +5,24 @@
   padding:0
 }
 
+:root {
+  --font-stack:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  --color-background:#f9f9f9;
+  --color-text:#363636;
+  --color-text-muted:#888;
+  --color-link:#0076d1
+}
+
 body {
   flex-wrap:wrap;
   display:flex;
   margin:0 auto;
   margin:20px auto;
   max-width:1000px;
-  background-color:#f9f9f9;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  background-color:var(--color-background);
+  font-family:var(--font-body, var(--font-stack));
   line-height:1.4;
-  color:#363636
+  color:var(--color-text)
 }
 
 .main, .sidebar {
@@ -39,7 +47,7 @@ footer {
   margin:0 auto;
   max-width:1000px;
   padding-top:4rem;
-  color:#888
+  color:var(--color-text-muted)
 }
 
 @media (max-width:768px) {
