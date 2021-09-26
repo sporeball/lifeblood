@@ -15,6 +15,17 @@ headings look like this:
 
 body text looks like this. it can be **bold**, *italic*, or <s>strikethrough</s>.
 
+---
+
+### lists
+- unordered lists look like this.
+- item 2
+- item 3
+
+1. ordered lists look like this.
+2. item 2
+3. item 3
+
 ### code
 inline code looks like this: `code here`
 

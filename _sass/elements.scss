@@ -1,0 +1,32 @@
+main {
+  ul, ol {
+    margin-bottom:1rem;
+    counter-reset:step-counter
+  }
+  li {
+    margin-bottom:0.5rem;
+    padding-left:2rem;
+    list-style:none
+  }
+}
+
+main ul li:before {
+  content:"\2022";
+  position:absolute;
+  margin-left:-2rem;
+  color:#888
+}
+
+main ol li:before {
+  content:counter(step-counter) ".";
+  position:absolute;
+  margin-left:-2rem;
+  color:#888;
+  counter-increment:step-counter
+}
+
+hr {
+  margin:1.5rem 0 0.75rem 0;
+  border-bottom:1px solid #d8d8d8
+}
+
