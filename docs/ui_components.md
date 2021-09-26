@@ -26,6 +26,9 @@ body text looks like this. it can be **bold**, *italic*, or <s>strikethrough</s>
 2. item 2
 3. item 3
 
+### blockquotes
+> blockquotes look like this.
+
 ### code
 inline code looks like this: `code here`
 

@@ -25,6 +25,12 @@ main ol li:before {
   counter-increment:step-counter
 }
 
+blockquote {
+  border-left:4px solid #ccc;
+  padding-left:1.5rem;
+  font-style:italic
+}
+
 hr {
   margin:1.5rem 0 0.75rem 0;
   border-bottom:1px solid #d8d8d8
