@@ -29,6 +29,14 @@ body text looks like this. it can be **bold**, *italic*, or <s>strikethrough</s>
 ### blockquotes
 > blockquotes look like this.
 
+### tables
+
+| number | word form |
+|--------|-----------|
+| 1      | one       |
+| 2      | two       |
+| 3      | three     |
+
 ### code
 inline code looks like this: `code here`
 

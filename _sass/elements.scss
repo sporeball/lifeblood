@@ -31,6 +31,26 @@ blockquote {
   font-style:italic
 }
 
+table {
+  margin-bottom:0.5rem;
+  border-spacing:0;
+  width:100%;
+  table-layout:fixed
+}
+
+th, td {
+  padding:6px;
+  text-align:left
+}
+
+th {
+  border-bottom:1px solid #ccc
+}
+
+tr:nth-child(2n) {
+  background-color:#e8e8e8
+}
+
 hr {
   margin:1.5rem 0 0.75rem 0;
   border-bottom:1px solid #d8d8d8
