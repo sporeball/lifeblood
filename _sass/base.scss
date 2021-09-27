@@ -7,10 +7,12 @@
 
 :root {
   --font-stack:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  --font-stack-code:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --color-background:#f9f9f9;
   --color-text:#363636;
   --color-text-muted:#888;
-  --color-link:#0076d1
+  --color-link:#0076d1;
+  --color-selection:#ddd
 }
 
 body {
