@@ -4,6 +4,8 @@ layout: page
 nav_order: 2
 ---
 # UI elements
+
+### typography
 headings look like this:
 
 # heading 1
@@ -14,6 +16,9 @@ headings look like this:
 ###### heading 6
 
 body text looks like this. it can be **bold**, *italic*, or <s>strikethrough</s>.
+
+a horizontal rule can be seen below.\
+the first `<h1>` tag on each page will be styled to appear as though it's followed by a horizontal rule.
 
 ---
 
@@ -30,6 +35,7 @@ body text looks like this. it can be **bold**, *italic*, or <s>strikethrough</s>
 > blockquotes look like this.
 
 ### tables
+tables look like this:
 
 | number | word form |
 |--------|-----------|

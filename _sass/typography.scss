@@ -1,13 +1,18 @@
 h1, h2, h3, h4, h5, h6, p {
   margin-top:0;
   margin-bottom:1rem;
-  font-family:var(--font-heading, var(--font-stack));
-  font-weight:400
+  font-weight:400;
+  font-family:var(--font-heading, var(--font-stack))
 }
 
 h1 {
   font-weight:700;
   font-size:2rem
+}
+
+h1:first-of-type {
+  border-bottom:1px solid #d8d8d8;
+  padding-bottom:0.75rem
 }
 
 h2 {
