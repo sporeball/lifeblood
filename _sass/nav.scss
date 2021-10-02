@@ -1,0 +1,12 @@
+nav li {
+  padding:0.125rem 1rem;
+  list-style:none
+}
+
+nav li:first-of-type {
+  padding:0.5rem 1rem 0.125rem
+}
+
+nav li:last-of-type {
+  padding:0.125rem 1rem 0.5rem
+}
