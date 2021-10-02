@@ -27,16 +27,16 @@ body {
   color:var(--color-text)
 }
 
-.main, .sidebar {
+.wrapper {
   position:relative;
   padding:0 15px
 }
 
-.main {
+.wrapper-main {
   width:75%
 }
 
-.sidebar {
+.wrapper-sidebar {
   border-right:1px solid #ccc;
   width:25%;
   height:min-content;
@@ -53,7 +53,7 @@ footer {
 }
 
 @media (max-width:768px) {
-  .main, .sidebar {
+  .wrapper {
     margin:0 auto;
     width:100%
   }
