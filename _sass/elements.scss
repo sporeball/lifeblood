@@ -14,14 +14,14 @@ main ul li:before {
   content:"\2022";
   position:absolute;
   margin-left:-2rem;
-  color:#888
+  color:var(--color-text-muted)
 }
 
 main ol li:before {
   content:counter(step-counter) ".";
   position:absolute;
   margin-left:-2rem;
-  color:#888;
+  color:var(--color-text-muted);
   counter-increment:step-counter
 }
 
