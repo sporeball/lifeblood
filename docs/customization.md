@@ -1,7 +1,7 @@
 ---
 title: customization
 layout: page
-nav_order: 3
+nav_order: 4
 ---
 # customization
 lifeblood tries hard to provide sensible defaults, but it also ships with a number of CSS variables and customization options should your site need them.
