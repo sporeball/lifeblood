@@ -2,11 +2,21 @@
   <nav>
     <ul>
     {%- assign titled_pages = site.html_pages | where_exp: "item", "item.title != nil and item.title != 404" -%}
-    {%- assign ordered_pages = titled_pages | sort: "nav_order" -%}
+    {%- assign numeric_pages = titled_pages | where_exp: "item", "item.nav_order != nil" | sort: "nav_order" -%}
+    {%- assign alphabetic_pages = titled_pages | where_exp: "item", "item.nav_order == nil" | sort: "title" -%}
 
-    {%- for page in ordered_pages -%}
+    {%- for page in numeric_pages -%}
       <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
     {%- endfor -%}
     </ul>
+
+    {%- if alphabetic_pages.size != 0 -%}
+    <hr>
+    <ul>
+    {%- for page in alphabetic_pages -%}
+      <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+    {%- endfor -%}
+    </ul>
+    {%- endif -%}
   </nav>
 </div>

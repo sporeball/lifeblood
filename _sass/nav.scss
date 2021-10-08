@@ -3,10 +3,19 @@ nav li {
   list-style:none
 }
 
+nav li:first-of-type:last-of-type {
+  padding:0.5rem 1rem
+}
+
 nav li:first-of-type {
-  padding:0.5rem 1rem 0.125rem
+  padding-top:0.5rem
 }
 
 nav li:last-of-type {
-  padding:0.125rem 1rem 0.5rem
+  padding-bottom:0.5rem
+}
+
+nav hr {
+  margin:0 auto;
+  width:90%
 }
