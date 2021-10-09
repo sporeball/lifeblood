@@ -19,3 +19,28 @@ nav hr {
   margin:0 auto;
   width:90%
 }
+
+#toggle {
+  display:none
+}
+
+div label {
+  float:right;
+  margin-right:0.5rem;
+  font-size:2rem;
+  user-select:none;
+  display:none
+}
+
+@media (max-width:768px) {
+  nav {
+    display:none
+  }
+  div label {
+    display:block
+  }
+  #toggle:checked ~ nav {
+    display:block;
+    margin-top:1.5rem
+  }
+}
