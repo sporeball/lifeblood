@@ -1,6 +1,6 @@
 <div class="wrapper wrapper-nav">
   <input type="checkbox" id="toggle"></input>
-  <label for="toggle">&#9776;</label>
+  <label for="toggle"><i data-feather="menu"></i></label>
   <nav>
     <ul>
     {%- assign titled_pages = site.html_pages | where_exp: "item", "item.title != nil and item.title != 404" -%}

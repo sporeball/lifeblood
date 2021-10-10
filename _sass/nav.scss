@@ -1,18 +1,11 @@
+nav {
+  padding:0.25rem 1rem
+}
+
 nav li {
-  padding:0.125rem 1rem;
+  height:2rem;
+  line-height:2rem;
   list-style:none
-}
-
-nav li:first-of-type:last-of-type {
-  padding:0.5rem 1rem
-}
-
-nav li:first-of-type {
-  padding-top:0.5rem
-}
-
-nav li:last-of-type {
-  padding-bottom:0.5rem
 }
 
 nav hr {
@@ -26,21 +19,22 @@ nav hr {
 
 div label {
   float:right;
+  display:none;
   margin-right:0.5rem;
-  font-size:2rem;
-  user-select:none;
-  display:none
+  height:2rem
 }
 
 @media (max-width:768px) {
   nav {
-    display:none
+    display:none;
+    padding:0 0 0 1rem
   }
   div label {
-    display:block
+    display:flex;
+    align-items:center
   }
   #toggle:checked ~ nav {
     display:block;
-    margin-top:1.5rem
+    margin-top:2rem
   }
 }
