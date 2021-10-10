@@ -1,11 +1,15 @@
-nav {
-  padding:0.25rem 1rem
-}
-
 nav li {
   height:2rem;
   line-height:2rem;
   list-style:none
+}
+
+nav li.active {
+  background-color:#e5e5e5
+}
+
+nav li a {
+  margin-left:1rem
 }
 
 nav hr {
@@ -27,7 +31,6 @@ div label {
 @media (max-width:768px) {
   nav {
     display:none;
-    padding:0 0 0 1rem
   }
   div label {
     display:flex;

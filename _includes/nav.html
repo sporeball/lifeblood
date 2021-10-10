@@ -7,16 +7,16 @@
     {%- assign numeric_pages = titled_pages | where_exp: "item", "item.nav_order != nil" | sort: "nav_order" -%}
     {%- assign alphabetic_pages = titled_pages | where_exp: "item", "item.nav_order == nil" | sort: "title" -%}
 
-    {%- for page in numeric_pages -%}
-      <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+    {%- for node in numeric_pages -%}
+    <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {%- endfor -%}
     </ul>
 
     {%- if alphabetic_pages.size != 0 -%}
     <hr>
     <ul>
-    {%- for page in alphabetic_pages -%}
-      <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+    {%- for node in alphabetic_pages -%}
+      <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {%- endfor -%}
     </ul>
     {%- endif -%}
