@@ -27,21 +27,18 @@ body {
 }
 
 .wrapper-content {
-  width:75%;
+  width:calc(100% - 250px);
   padding:0 15px
 }
 
 .wrapper-nav {
   border-right:1px solid #ccc;
-  width:25%;
+  width:250px;
   height:min-content;
   background-color:#ececec
 }
 
 footer {
-  overflow:auto;
-  margin:0 auto;
-  max-width:1000px;
   padding-top:4rem;
   color:var(--color-text-muted)
 }
