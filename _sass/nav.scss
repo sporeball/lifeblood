@@ -1,9 +1,3 @@
-nav li {
-  line-height:1.5rem;
-  word-break:break-word;
-  list-style:none
-}
-
 .wrapper-nav a {
   display:inline-block;
   width:100%;
@@ -13,12 +7,14 @@ nav li {
   }
 }
 
-nav li a {
-  padding:0.25rem 1rem
+nav li {
+  line-height:1.5rem;
+  word-break:break-word;
+  list-style:none
 }
 
-nav li.active {
-  background-color:#e8e8e8
+nav li a {
+  padding:0.25rem 1rem
 }
 
 nav hr {
@@ -26,11 +22,15 @@ nav hr {
   width:90%
 }
 
-#toggle {
+.active {
+  background-color:#e8e8e8
+}
+
+#invis {
   display:none
 }
 
-div label {
+#toggle {
   float:right;
   display:none;
   width:48px;
@@ -42,8 +42,7 @@ div label {
   cursor:pointer;
   font-size:1.25rem;
   line-height:3rem;
-  color:var(--color-text);
-  user-select:none
+  color:var(--color-text)
 }
 
 @media (max-width:768px) {
@@ -53,7 +52,7 @@ div label {
   nav li a {
     padding:0.5rem 1rem
   }
-  div label {
+  #toggle {
     display:flex;
     cursor:pointer;
     align-items:center;
@@ -65,7 +64,7 @@ div label {
   #site_title {
     width:calc(100% - 48px)
   }
-  #toggle:checked ~ nav {
+  #invis:checked ~ nav {
     display:block
   }
 }
