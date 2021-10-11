@@ -1,12 +1,24 @@
 nav li {
-  padding:0.25rem 1rem;
   line-height:1.5rem;
   word-break:break-word;
   list-style:none
 }
 
+.wrapper-nav a {
+  display:inline-block;
+  width:100%;
+  &:hover {
+    background-color:#e8e8e8;
+    text-decoration:none
+  }
+}
+
+nav li a {
+  padding:0.25rem 1rem
+}
+
 nav li.active {
-  background-color:#e5e5e5
+  background-color:#e8e8e8
 }
 
 nav hr {
@@ -26,8 +38,7 @@ div label {
 }
 
 #site_title {
-  margin:0 0 0 1rem;
-  height:3rem;
+  padding-left:1rem;
   cursor:pointer;
   font-size:1.25rem;
   line-height:3rem;
@@ -39,7 +50,7 @@ div label {
   nav {
     display:none
   }
-  nav li {
+  nav li a {
     padding:0.5rem 1rem
   }
   div label {
@@ -48,8 +59,11 @@ div label {
     align-items:center;
     justify-content:center;
     &:hover {
-      background-color:#e5e5e5
+      background-color:#e8e8e8
     }
+  }
+  #site_title {
+    width:calc(100% - 48px)
   }
   #toggle:checked ~ nav {
     display:block
