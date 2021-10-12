@@ -14,7 +14,7 @@ these can be placed in your site's [custom stylesheet](#custom) under a standard
 - **\--color-text** - site text color (default: `#363636`)
 - **\--color-text-muted** - color for less important text, e.g. footer contents (default: `#888`)
 - **\--color-link** - site link color (default: `#0076d1`)
-- **\--color-selection** - color of selected text (default: `#ddd`)
+- **\--color-selection** - background color of selected text (default: `#ddd`)
 
 ### fonts
 - **\--font-stack** - default sans-serif font stack
