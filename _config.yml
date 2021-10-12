@@ -1,5 +1,7 @@
 title: lifeblood
 description: hyperfocused Jekyll theme for documentation
+baseurl: "/lifeblood"
+url: "https://sporeball.dev"
 encoding: utf-8
 
 sass:
