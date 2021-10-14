@@ -54,3 +54,37 @@ if (thing == true) {
   return true;
 }
 ```
+
+### callouts
+callouts are a type of element added by lifeblood, similar to the admonition syntax available in [Read the Docs](https://readthedocs.org).\
+add one of the classes `.tip`, `.note`, or `.caution` to a paragraph using a Kramdown [inline attribute list](https://kramdown.gettalong.org/syntax.html#inline-attribute-lists) to turn it into a callout:
+
+```md
+{: .tip}
+this is a *tip* callout.
+
+{: .note}
+this is a *note* callout.
+
+{: .caution}
+this is a *caution* callout.
+```
+
+{: .tip}
+this is a *tip* callout.
+
+{: .note}
+this is a *note* callout.
+
+{: .caution}
+this is a *caution* callout.
+
+add `.caps` to capitalize the callout's first letter:
+
+```md
+{: .note .caps}
+this is a *note* callout with the first letter capitalized.
+```
+
+{: .note .caps}
+this is a *note* callout with the first letter capitalized.

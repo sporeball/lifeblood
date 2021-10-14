@@ -56,3 +56,36 @@ hr {
   border-bottom:1px solid #d8d8d8
 }
 
+.tip, .note, .caution {
+  padding:0.5rem 1.5rem;
+  &:before {
+    font-weight:bold
+  }
+}
+
+.tip {
+  border-left:4px solid #5ac54f;
+  background-color:#e7fdb8
+}
+
+.tip:before {
+  content:"tip: "
+}
+
+.note {
+  border-left:4px solid #0098dc;
+  background-color:#cffeff
+}
+
+.note:before {
+  content:"note: "
+}
+
+.caution {
+  border-left:4px solid #ffc825;
+  background-color:#fff4a5
+}
+
+.caution:before {
+  content:"caution: "
+}
