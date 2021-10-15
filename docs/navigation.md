@@ -22,4 +22,5 @@ nav_order: 3
 ---
 ```
 
+{: .note}
 if a page is given a `title` of `404`, it will automatically be excluded from the navigation.

@@ -8,6 +8,7 @@ nav_order: 1
 **lifeblood** is a hyperfocused Jekyll theme for documentation -- clean, customizable, cutesy.\
 it's designed as the theme for [victus](https://sporeball.dev/victus)' documentation, while being available for all to use.
 
+{: .note}
 lifeblood is currently **in development!**  expect various changes to this site in the near future.
 
 ### quick start
