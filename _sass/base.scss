@@ -43,6 +43,16 @@ footer {
   color:var(--color-text-muted)
 }
 
+@media (min-width:769px) {
+  .wrapper-content {
+    position:relative;
+    left:250px
+  }
+  .wrapper-nav {
+    position:fixed
+  }
+}
+
 @media (max-width:768px) {
   body {
     margin:0 auto;
