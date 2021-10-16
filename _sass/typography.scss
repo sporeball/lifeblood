@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family:var(--font-heading, var(--font-stack))
 }
 
+h1:not(:first-child), h2, h3, h4, h5, h6 {
+  margin-top:1.5rem
+}
+
 h1 {
   font-weight:700;
   font-size:2rem
