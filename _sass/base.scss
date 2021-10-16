@@ -18,8 +18,9 @@
 body {
   flex-wrap:wrap;
   display:flex;
-  margin:20px auto;
+  margin:auto;
   max-width:1000px;
+  padding:20px;
   background-color:var(--color-background);
   font-family:var(--font-body, var(--font-stack));
   line-height:1.4;
@@ -28,7 +29,7 @@ body {
 
 .wrapper-content {
   width:calc(100% - 250px);
-  padding:0 15px
+  padding-left:15px
 }
 
 .wrapper-nav {
@@ -44,7 +45,8 @@ footer {
 
 @media (max-width:768px) {
   body {
-    margin:0 auto
+    margin:0 auto;
+    padding:0
   }
   .wrapper {
     width:100%
