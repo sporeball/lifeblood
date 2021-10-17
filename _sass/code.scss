@@ -4,14 +4,18 @@ pre {
   border-radius:6px;
   padding:1rem;
   background-color:#e8e8e8;
-  font-size:0.875rem;
+  font-size:0.875em;
   white-space:pre
 }
 
 code {
-  font-size:0.875rem;
+  font-size:0.875em;
   font-family:var(--font-code, var(--font-stack-code));
   word-break:normal
+}
+
+pre code {
+  font-size:inherit
 }
 
 /* inline code */
