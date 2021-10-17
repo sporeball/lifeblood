@@ -1,32 +1,24 @@
-/* inline code */
-code.highlighter-rouge {
-  border-radius:3px;
-  padding:1px 5px;
-  background-color:#e8e8e8;
-  font-size:0.875rem
-}
-
-/* code block */
 pre {
   overflow:auto;
   margin:0 0 1rem;
   border-radius:6px;
   padding:1rem;
   background-color:#e8e8e8;
-  font-size:0;
-  font-family:var(--font-code, var(--font-stack-code));
-}
-
-/* lines in a block */
-pre code {
   font-size:0.875rem;
-  word-break:normal;
   white-space:pre
 }
 
-/* tokens in a line */
-code span {
-  font-size:0.875rem
+code {
+  font-size:0.875rem;
+  font-family:var(--font-code, var(--font-stack-code));
+  word-break:normal
+}
+
+/* inline code */
+code.highlighter-rouge {
+  border-radius:3px;
+  padding:1px 5px;
+  background-color:#e8e8e8
 }
 
 .dl, .s, .s2, .sb {
