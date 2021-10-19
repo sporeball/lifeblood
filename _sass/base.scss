@@ -33,6 +33,8 @@ body {
 }
 
 .wrapper-nav {
+  flex-direction:column;
+  display:flex;
   width:250px;
   height:min-content;
   background-color:#efefef
@@ -49,7 +51,8 @@ footer {
     left:250px
   }
   .wrapper-nav {
-    position:fixed
+    position:fixed;
+    max-height:calc(100% - 40px)
   }
 }
 
