@@ -26,3 +26,5 @@ also of note are the various [customization options](docs/customization) availab
 #### acknowledgements
 lifeblood is heavily inspired by the [Just the Docs](https://pmarsceill.github.io/just-the-docs) theme by [Patrick Marsceill](https://www.thismodernweb.com).\
 it also borrows some ideas from [Water.css](https://watercss.kognise.dev) by [Kognise](https://kognise.dev).
+
+the nav icon and site favicon are taken from the [Feather](https://feathericons.com) icon set by [Cole Bemis](https://colebemis.com).
