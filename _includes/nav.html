@@ -38,7 +38,11 @@
   <p id="versions">
     {%- for version in versions_map -%}
     {%- assign match = same_titled_pages | where_exp: "item", "item.version == version" | first -%}
+    {%- if match == nil -%}
+    <a class="redlink" title="page does not exist">{{ version }}</a>
+    {%- else -%}
     <a href="{{ match.url | absolute_url }}">{{ version }}</a>
+    {%- endif -%}
     {%- endfor -%}
   </p>
   {%- endif -%}

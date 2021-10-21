@@ -64,6 +64,11 @@ nav hr {
   }
 }
 
+#versions a.redlink {
+  color:#d10000;
+  cursor:help
+}
+
 @media (max-width:768px) {
   nav {
     display:none
