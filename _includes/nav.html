@@ -4,9 +4,18 @@
     <a id="site_title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
     <label for="invis" id="toggle"><i data-feather="menu"></i></label>
   </div>
+
   <nav>
     <ul>
     {%- assign titled_pages = site.html_pages | where_exp: "item", "item.title != nil" | where_exp: "item", "item.title != 404" -%}
+
+    {%- if site.enable_versions == true -%}
+    {%- assign versions_map = titled_pages | map: "version" | uniq | compact -%}
+    {%- assign same_titled_pages = titled_pages | where_exp: "item", "item.title == page.title" -%}
+    <!-- restrict the nav to pages which share the same version as the page we're on -->
+    {%- assign titled_pages = titled_pages | where_exp: "item", "item.version != nil" | where_exp: "item", "item.version == page.version" -%}
+    {%- endif -%}
+
     {%- assign numeric_pages = titled_pages | where_exp: "item", "item.nav_order != nil" | sort: "nav_order" -%}
     {%- assign alphabetic_pages = titled_pages | where_exp: "item", "item.nav_order == nil" | sort: "title" -%}
 
@@ -24,4 +33,13 @@
     </ul>
     {%- endif -%}
   </nav>
+
+  {%- if site.enable_versions == true and page.title != 404 -%}
+  <p id="versions">
+    {%- for version in versions_map -%}
+    {%- assign match = same_titled_pages | where_exp: "item", "item.version == version" | first -%}
+    <a href="{{ match.url | absolute_url }}">{{ version }}</a>
+    {%- endfor -%}
+  </p>
+  {%- endif -%}
 </div>
