@@ -1,4 +1,4 @@
-.wrapper-nav a {
+nav a, #site_title {
   display:inline-block;
   width:100%;
   &:hover {
@@ -52,11 +52,12 @@ nav hr {
 #versions {
   margin-bottom:0;
   padding:0.5rem 1rem;
-  line-height:1.3rem;
+  line-height:1.5rem;
   color:#0d96ff
 }
 
 #versions a {
+  display:inline-block;
   width:initial;
   color:#0d96ff;
   &:not(:last-child) {
@@ -65,12 +66,12 @@ nav hr {
 }
 
 #versions a.redlink {
-  color:#d10000;
-  cursor:help
+  cursor:help;
+  color:#d10000
 }
 
 @media (max-width:768px) {
-  nav {
+  #nav_content {
     display:none
   }
   nav li a {
@@ -88,7 +89,7 @@ nav hr {
   #site_title {
     width:calc(100% - 48px)
   }
-  #invis:checked ~ nav {
+  #invis:checked ~ #nav_content {
     display:block
   }
 }
