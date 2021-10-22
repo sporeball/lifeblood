@@ -14,6 +14,8 @@ these can be placed in your site's [custom stylesheet](#custom) under a standard
 - **\--color-text** - site text color (default: `#363636`)
 - **\--color-text-muted** - color for less important text, e.g. footer contents (default: `#888`)
 - **\--color-link** - site link color (default: `#0076d1`)
+- **\--color-link-alt** - alternate link color. used in the [version picker](navigation#multiple-versions) (default: `#0d96ff`)
+- **\--color-redlink** - color for dead links (default: `#d10000`)
 - **\--color-selection** - background color of selected text (default: `#ddd`)
 
 ### fonts

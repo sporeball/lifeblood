@@ -52,14 +52,13 @@ nav hr {
 #versions {
   margin-bottom:0;
   padding:0.5rem 1rem;
-  line-height:1.5rem;
-  color:#0d96ff
+  line-height:1.5rem
 }
 
 #versions a {
   display:inline-block;
   width:initial;
-  color:#0d96ff;
+  color:var(--color-link-alt);
   &:not(:last-child) {
     margin-right:0.5rem
   }
@@ -67,7 +66,7 @@ nav hr {
 
 #versions a.redlink {
   cursor:help;
-  color:#d10000
+  color:var(--color-redlink)
 }
 
 @media (max-width:768px) {
