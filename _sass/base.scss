@@ -14,9 +14,18 @@
   --color-link:#0076d1;
   --color-link-alt:#0d96ff;
   --color-redlink:#d10000;
+  --color-nav:#efefef;
+  --color-nav-active:#e8e8e8;
+  --color-code:#e8e8e8;
+  --color-table-stripe:#e8e8e8;
+  --color-tip:#e7fdb8;
+  --color-tip-accent:#5ac54f;
+  --color-note:#cffeff;
+  --color-note-accent:#0098dc;
+  --color-caution:#fff4a5;
+  --color-caution-accent:#ffc825;
   --color-selection:#ddd
 }
-
 
 body {
   flex-wrap:wrap;
@@ -40,7 +49,7 @@ body {
   display:flex;
   width:250px;
   height:min-content;
-  background-color:#efefef
+  background-color:var(--color-nav)
 }
 
 footer {

@@ -45,11 +45,11 @@ th, td {
 }
 
 th {
-  border-bottom:1px solid #ccc
+  border-bottom:1px solid #d8d8d8
 }
 
 tr:nth-child(2n) {
-  background-color:#e8e8e8
+  background-color:var(--color-table-stripe)
 }
 
 img {
@@ -70,8 +70,8 @@ hr {
 }
 
 .tip {
-  border-left:4px solid #5ac54f;
-  background-color:#e7fdb8
+  border-left:4px solid var(--color-tip-accent);
+  background-color:var(--color-tip)
 }
 
 .tip:before {
@@ -79,8 +79,8 @@ hr {
 }
 
 .note {
-  border-left:4px solid #0098dc;
-  background-color:#cffeff
+  border-left:4px solid var(--color-note-accent);
+  background-color:var(--color-note)
 }
 
 .note:before {
@@ -88,8 +88,8 @@ hr {
 }
 
 .caution {
-  border-left:4px solid #ffc825;
-  background-color:#fff4a5
+  border-left:4px solid var(--color-caution-accent);
+  background-color:var(--color-caution)
 }
 
 .caution:before {

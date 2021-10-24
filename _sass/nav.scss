@@ -2,7 +2,7 @@ nav a, #site_title {
   display:inline-block;
   width:100%;
   &:hover {
-    background-color:#e8e8e8;
+    background-color:var(--color-nav-active);
     text-decoration:none
   }
 }
@@ -27,7 +27,7 @@ nav hr {
 }
 
 .active {
-  background-color:#e8e8e8
+  background-color:var(--color-nav-active)
 }
 
 #invis {
@@ -82,7 +82,7 @@ nav hr {
     align-items:center;
     justify-content:center;
     &:hover {
-      background-color:#e8e8e8
+      background-color:var(--color-nav-active)
     }
   }
   #site_title {

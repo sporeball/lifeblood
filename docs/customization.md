@@ -18,6 +18,18 @@ these can be placed in your site's [custom stylesheet](#custom) under a standard
 - **\--color-redlink** - color for dead links (default: `#d10000`)
 - **\--color-selection** - background color of selected text (default: `#ddd`)
 
+#### elements
+- **\--color-nav** - nav background color (default: `#efefef`)
+- **\--color-nav-active** - shown on hover, and on the active page (default: `#e8e8e8`)
+- **\--color-code** - code block background color (default: `#e8e8e8`)
+- **\--color-table-stripe** - background color for even-numbered table rows (default: `#e8e8e8`)
+- **\--color-tip** - background color for tip-style [callouts](ui-elements#callouts) (default: `#e7fdb8`)
+- **\--color-tip-accent** (default: `#5ac54f`)
+- **\--color-note** - background color for note-style callouts (default: `#cffeff`)
+- **\--color-note-accent** (default: `#0098dc`)
+- **\--color-caution** - background color for caution-style callouts (default: `#fff4a5`)
+- **\--color-caution-accent** (default: `#ffc825`)
+
 ### fonts
 - **\--font-stack** - default sans-serif font stack
 - **\--font-stack-code** - default font stack for code blocks

@@ -3,7 +3,7 @@ pre {
   margin:0 0 1rem;
   border-radius:6px;
   padding:1rem;
-  background-color:#e8e8e8;
+  background-color:var(--color-code);
   font-size:0.875em;
   white-space:pre
 }
@@ -22,7 +22,7 @@ pre code {
 code.highlighter-rouge {
   border-radius:3px;
   padding:1px 5px;
-  background-color:#e8e8e8
+  background-color:var(--color-code)
 }
 
 .dl, .s, .s2, .sb {
