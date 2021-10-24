@@ -17,6 +17,7 @@
   --color-selection:#ddd
 }
 
+
 body {
   flex-wrap:wrap;
   display:flex;
@@ -45,6 +46,12 @@ body {
 footer {
   padding-top:4rem;
   color:var(--color-text-muted)
+}
+
+@media (min-width:960px) {
+  html {
+    margin-left:calc(100vw - 100%);
+  }
 }
 
 @media (min-width:769px) {
