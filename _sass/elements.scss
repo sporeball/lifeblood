@@ -4,8 +4,8 @@ main {
     counter-reset:step-counter
   }
   li {
-    margin-left:1rem;
     margin-bottom:0.5rem;
+    margin-left:1rem;
     padding-left:2rem;
     list-style:none
   }
@@ -50,6 +50,11 @@ th {
 
 tr:nth-child(2n) {
   background-color:#e8e8e8
+}
+
+img {
+  margin-bottom:-0.5rem;
+  max-width:100%
 }
 
 hr {
