@@ -30,6 +30,14 @@ these can be placed in your site's [custom stylesheet](#custom) under a standard
 - **\--color-caution** - background color for caution-style callouts (default: `#fff4a5`)
 - **\--color-caution-accent** (default: `#ffc825`)
 
+#### syntax highlighting tokens
+- **\--color-code-string** (default: `#50a14f`)
+- **\--color-code-keyword** (default: `#a626a4`)
+- **\--color-code-constant** (default: `#986801`)
+- **\--color-code-builtin** (default: `#cb7701`)
+- **\--color-code-operator** (default: `#0184bc`)
+- **\--color-code-comment** (default: `#727272`)
+
 ### fonts
 - **\--font-stack** - default sans-serif font stack
 - **\--font-stack-code** - default font stack for code blocks

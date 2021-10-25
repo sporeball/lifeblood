@@ -26,25 +26,25 @@ code.highlighter-rouge {
 }
 
 .dl, .s, .s2, .sb {
-  color:#50a14f
+  color:var(--color-code-string)
 }
 
 .k, .kd, .kn, .kp, .kr, .kt, .nl {
-  color:#a626a4
+  color:var(--color-code-keyword)
 }
 
 .kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb {
-  color:#986801
+  color:var(--color-code-constant)
 }
 
 .nb {
-  color:#cb7701
+  color:var(--color-code-builtin)
 }
 
 .o {
-  color:#0184bc
+  color:var(--color-code-operator)
 }
 
 .c, .cm, .cp, .c1 {
-  color:#727272
+  color:var(--color-code-comment)
 }
