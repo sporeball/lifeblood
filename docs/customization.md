@@ -73,3 +73,9 @@ an array of fonts to load from [Google Fonts](https://fonts.google.com).\
 each item should match what is found after the `family` URL parameter of the font, e.g. `Nunito+Sans` or `Rubik:wght@300;600`.
 
 if done correctly, you'll be able to use the loaded fonts as [overrides](#overrides).
+
+#### enable_versions
+type: `boolean`
+
+if `true`, the navigation will change to allow for multiple versions of documentation.\
+see the [navigation](navigation#multiple-versions) page for more information.
