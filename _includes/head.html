@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ site.fonts | join: '&family=' }}&display=swap">
   {%- endif -%}
-  {%- if site.custom -%}
+  {%- if site.enable_custom -%}
   <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
   {%- endif -%}
 </head>

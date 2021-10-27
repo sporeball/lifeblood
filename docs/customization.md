@@ -60,7 +60,7 @@ type: `string`
 
 content to show in the right half of the site footer.
 
-#### custom
+#### enable_custom
 type: `boolean`
 
 if `true`, the contents of the file `assets/custom.scss` will be loaded after all other styles.\
