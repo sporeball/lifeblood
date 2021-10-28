@@ -18,6 +18,8 @@ compress_html:
   blanklines: false
   profile: false
 
+theme_color: "#fc88fc"
+
 footer_left: "made with <span class='love'>&lt;3</span> by <a href='https://sporeball.dev' target='_blank'>sporeball</a>"
 footer_right: "&copy; 2021"
 
