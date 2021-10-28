@@ -1,20 +1,17 @@
 ::-webkit-scrollbar {
-  width:10px;
-  height:10px
-}
-
-::-webkit-scrollbar-track {
-  border-radius:6px;
-  background:#dedede
+  width:16px
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius:6px;
-  background:#c8c8c8
+  border:4px solid transparent;
+  border-radius:8px;
+  background:#bdbdbd;
+  background-clip:content-box
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:#b2b2b2
+  background:#999999;
+  background-clip:content-box
 }
 
 ::selection {
