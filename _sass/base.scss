@@ -56,14 +56,22 @@ body {
   background-color:var(--color-nav)
 }
 
+main {
+  margin-bottom:4rem
+}
+
 footer {
-  padding-top:4rem;
+  display:flex;
   color:var(--color-text-muted)
+}
+
+#footer_right {
+  margin-left:auto
 }
 
 @media (min-width:960px) {
   html {
-    margin-left:calc(100vw - 100%);
+    margin-left:calc(100vw - 100%)
   }
 }
 
