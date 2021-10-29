@@ -2,7 +2,17 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="{{ site.description }}">
+
+  {%- assign desc = page.content | markdownify | newline_to_br | split: "<br />" -%}
+  {%- assign desc_hless = "" | split: "" -%}
+  {%- for item in desc -%}
+  {%- unless item contains "</h1>" or item contains "</h2>" or item contains "</h3>" or item contains "</h4>" or item contains "</h5>" or item contains "</h6>" -%}
+  {%- assign desc_hless = desc_hless | push: item -%}
+  {%- endunless -%}
+  {%- endfor -%}
+  {%- assign desc_hless = desc_hless | join: "" | strip_html | truncate: 180 | strip -%}
+  <meta name="description" content="{{ desc_hless }}">
+
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
