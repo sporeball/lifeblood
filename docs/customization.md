@@ -60,6 +60,11 @@ type: `string`
 
 content to show in the right half of the site footer.
 
+#### theme_color
+type: `string`
+
+value to use for the [`theme-color`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color) meta tag.
+
 #### enable_custom
 type: `boolean`
 
@@ -73,6 +78,12 @@ an array of fonts to load from [Google Fonts](https://fonts.google.com).\
 each item should match what is found after the `family` URL parameter of the font, e.g. `Nunito+Sans` or `Rubik:wght@300;600`.
 
 if done correctly, you'll be able to use the loaded fonts as [overrides](#overrides).
+
+#### enable_dark_theme
+type: `boolean`
+
+if `true`, a dark theme will be used on devices which express a preference.\
+this is enabled by default.
 
 #### enable_versions
 type: `boolean`
