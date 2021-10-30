@@ -1,0 +1,25 @@
+---
+---
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background:#141414;
+    --color-text:#efefef;
+    --color-link:#14afff;
+    --color-link-alt:#5bb8ff;
+    --color-redlink:#ff3434;
+    --color-nav:#222;
+    --color-nav-active:#333;
+    --color-code:#222;
+    --color-code-string:#98c379;
+    --color-code-keyword:#c678dd;
+    --color-code-constant:#d19a66;
+    --color-code-builtin:#e6c07b;
+    --color-code-operator:#56b6c2;
+    --color-table-stripe:#222;
+    --color-tip:#145631;
+    --color-note:#144756;
+    --color-caution:#464310;
+    --color-selection:#444
+  }
+}

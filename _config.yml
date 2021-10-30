@@ -26,4 +26,5 @@ footer_right: "&copy; 2021"
 # enable_custom: true
 # fonts: []
 
+enable_dark_theme: true
 # enable_versions: true

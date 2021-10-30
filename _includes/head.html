@@ -26,6 +26,9 @@
   <meta name="theme-color" content="{{ site.theme_color }}">
 
   <link rel="stylesheet" href="{{ '/assets/lifeblood.css' | relative_url }}">
+  {%- if site.enable_dark_theme -%}
+  <link rel="stylesheet" href="{{ '/assets/lifeblood_dark.css' | relative_url }}">
+  {%- endif -%}
   <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 
   {%- if site.fonts -%}
