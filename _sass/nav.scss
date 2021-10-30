@@ -7,6 +7,12 @@ nav a, #site_title {
   }
 }
 
+#nav_content {
+  display:flex;
+  flex-direction:column;
+  overflow-y:auto
+}
+
 nav {
   overflow-y:auto
 }
