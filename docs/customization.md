@@ -82,8 +82,7 @@ if done correctly, you'll be able to use the loaded fonts as [overrides](#overri
 #### enable_dark_theme
 type: `boolean`
 
-if `true`, a dark theme will be used on devices which express a preference.\
-this is enabled by default.
+if `true`, a dark theme will be used on devices which express a preference.
 
 #### enable_versions
 type: `boolean`
