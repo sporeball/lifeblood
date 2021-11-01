@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["sporeball"]
   spec.email         = ["sporeballdev@gmail.com"]
 
-  spec.summary       = "hyperfocused Jekyll theme for documentation"
+  spec.summary       = "a hyperfocused Jekyll theme for documentation"
   spec.homepage      = "https://github.com/sporeball/lifeblood"
   spec.license       = "MIT"
 
