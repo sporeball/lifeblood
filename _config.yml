@@ -5,10 +5,7 @@ encoding: utf-8
 sass:
   style: compressed
 
-exclude:
-  - README.md
-  - LICENSE
-  - Gemfile.lock
+exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
 
 compress_html:
   clippings: all
