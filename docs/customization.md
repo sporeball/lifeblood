@@ -22,6 +22,7 @@ these can be placed in your site's [custom stylesheet](#custom) under a standard
 - **\--color-nav** - nav background color (default: `#efefef`)
 - **\--color-nav-active** - shown on hover, and on the active page (default: `#e8e8e8`)
 - **\--color-code** - code block background color (default: `#e8e8e8`)
+- **\--color-hr** - horizontal rule color. also used when styling table headers and the first `h1` element on each page (default: `#d8d8d8`)
 - **\--color-table-stripe** - background color for even-numbered table rows (default: `#e8e8e8`)
 - **\--color-tip** - background color for tip-style [callouts](ui-elements#callouts) (default: `#e7fdb8`)
 - **\--color-tip-accent** (default: `#5ac54f`)
