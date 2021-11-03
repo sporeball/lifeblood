@@ -7,8 +7,15 @@ main {
     margin-bottom:0.5rem;
     margin-left:1rem;
     padding-left:2rem;
-    list-style:none
+    list-style:none;
+    ol, ol *, ul, ul * {
+      margin:0.25rem 0
+    }
   }
+}
+
+main ol li ol {
+  counter-reset:sub-counter
 }
 
 main ul li:before {
@@ -24,6 +31,22 @@ main ol li:before {
   margin-left:-2rem;
   color:var(--color-text-muted);
   counter-increment:step-counter
+}
+
+ol li ol li:before {
+  content:counter(sub-counter, lower-alpha) ".";
+  counter-increment:sub-counter
+}
+
+#markdown-toc {
+  padding-top:1.75rem
+}
+
+#markdown-toc:before {
+  content:"Table of Contents";
+  font-variant:small-caps;
+  position:absolute;
+  margin-top:-1.75rem
 }
 
 blockquote {
