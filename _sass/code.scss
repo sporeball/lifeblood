@@ -25,16 +25,28 @@ code.highlighter-rouge {
   background-color:var(--color-code)
 }
 
-.dl, .s, .s2, .sb {
+.nt, .gh, .si, .se {
+  color:var(--color-code-name)
+}
+
+.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {
   color:var(--color-code-string)
 }
 
-.k, .kd, .kn, .kp, .kr, .kt, .nl {
+.nx, .nf, .nn, .nc, .ss, .sx {
+  color:var(--color-code-function)
+}
+
+.k, .kd, .kn, .kp, .kr, .ge {
   color:var(--color-code-keyword)
 }
 
-.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb {
+.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {
   color:var(--color-code-constant)
+}
+
+.na {
+  color:var(--color-code-attribute)
 }
 
 .nb {

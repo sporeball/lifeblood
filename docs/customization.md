@@ -32,9 +32,12 @@ these can be placed in your site's [custom stylesheet](#custom) under a standard
 - **\--color-caution-accent** (default: `#ffc825`)
 
 #### syntax highlighting tokens
+- **\--color-code-name** (default: `#e45649`)
 - **\--color-code-string** (default: `#50a14f`)
+- **\--color-code-function** (default: `#4078f2`)
 - **\--color-code-keyword** (default: `#a626a4`)
 - **\--color-code-constant** (default: `#986801`)
+- **\--color-code-attribute** (default: `#b76b01`)
 - **\--color-code-builtin** (default: `#cb7701`)
 - **\--color-code-operator** (default: `#0184bc`)
 - **\--color-code-comment** (default: `#727272`)
