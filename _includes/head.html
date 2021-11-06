@@ -1,5 +1,11 @@
 <head>
-  <title>{{ page.title }} | {{ site.title }}</title>
+  {%- capture title -%}{{ page.title }} | {{ site.title }}{%- endcapture -%}
+  {%- if site.enable_versions == true and page.version != nil -%}
+  {%- capture version -%}({{ page.version }}){%- endcapture -%}
+  {%- assign title = title | append: " " | append: version -%}
+  {%- endif -%}
+  <title>{{ title }}</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
