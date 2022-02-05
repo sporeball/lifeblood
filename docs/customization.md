@@ -54,6 +54,13 @@ these can be placed in your site's [custom stylesheet](#custom) under a standard
 ## site options
 these should go in your `_config.yml`.
 
+#### home
+type: `string`
+
+the path to your documentation's front page; for example, [victus](https://sporeball.dev/victus) uses `/docs`.\
+this will be used in the navigation.\
+useful for project sites which serve an `index.html` page separate from the project's documentation.
+
 #### footer_left
 type: `string`
 
