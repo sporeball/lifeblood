@@ -20,7 +20,7 @@ compress_html:
 theme_color: "#fc88fc"
 
 footer_left: "made with <span class='love'>&lt;3</span> by <a href='https://sporeball.dev' target='_blank'>sporeball</a>"
-footer_right: "&copy; 2021"
+footer_right: "&copy; 2022"
 
 # enable_custom: true
 # fonts: []
