@@ -16,6 +16,7 @@ compress_html:
   profile: false
 
 # home: ""
+# nav_categories: []
 
 theme_color: "#fc88fc"
 

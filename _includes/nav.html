@@ -5,6 +5,7 @@
 {%- endif -%}
 
 <div class="wrapper wrapper-nav">
+  <!-- top section -->
   <input type="checkbox" id="invis"></input>
   <div id="nav_top">
     <a id="site_title" href="{{ home | absolute_url }}">{{ site.title }}</a>
@@ -17,6 +18,7 @@
     </label>
   </div>
 
+  <!-- main section -->
   <div id="nav_content">
     <nav>
       <ul>
@@ -29,6 +31,17 @@
       {%- assign titled_pages = titled_pages | where_exp: "item", "item.version != nil" | where_exp: "item", "item.version == page.version" -%}
       {%- endif -%}
 
+      {%- if site.nav_categories -%}
+      <!-- category code -->
+      {%- for category in site.nav_categories -%}
+      {%- assign same_category_pages = titled_pages | where_exp: "item", "item.category == category" | sort: "nav_order" -%}
+      <li>{{ category }}</li/>
+      {%- for node in same_category_pages -%}
+      <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+      {%- endfor -%}
+      {%- endfor -%}
+      {%- else -%}
+      <!-- non-category code -->
       {%- assign numeric_pages = titled_pages | where_exp: "item", "item.nav_order != nil" | sort: "nav_order" -%}
       {%- assign alphabetic_pages = titled_pages | where_exp: "item", "item.nav_order == nil" | sort: "title" -%}
 
@@ -36,17 +49,20 @@
       <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {%- endfor -%}
       </ul>
-
       {%- if alphabetic_pages.size != 0 -%}
       <hr>
       <ul>
       {%- for node in alphabetic_pages -%}
-        <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+      <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {%- endfor -%}
-      </ul>
       {%- endif -%}
+
+      {%- endif -%}
+      </ul>
     </nav>
 
+    <!-- bottom section -->
+    <!-- creates links to all versions of the current page -->
     {%- if site.enable_versions == true and page.title != 404 -%}
     <p id="versions">
       {%- for version in versions_map -%}
