@@ -36,7 +36,7 @@
       {%- for category in site.nav_categories -%}
       {%- assign same_category_pages = titled_pages | where_exp: "item", "item.category == category" | sort: "nav_order" -%}
       {%- if same_category_pages.size != 0 -%}
-      <li>{{ category }}</li/>
+      <li class="category">{{ category }}</li/>
       {%- for node in same_category_pages -%}
       <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {%- endfor -%}

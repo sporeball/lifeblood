@@ -8,8 +8,8 @@ nav a, #site_title {
 }
 
 #nav_content {
-  display:flex;
   flex-direction:column;
+  display:flex;
   overflow-y:auto
 }
 
@@ -23,8 +23,16 @@ nav li {
   list-style:none
 }
 
-nav li a {
+nav li a, nav li.category {
   padding:0.25rem 1rem
+}
+
+nav li.category {
+  display:inline-block;
+  width:100%;
+  font-size:13px;
+  text-transform:uppercase;
+  color:var(--color-text-muted)
 }
 
 nav hr {
@@ -79,7 +87,7 @@ nav hr {
   #nav_content {
     display:none
   }
-  nav li a {
+  nav li a, nav li.category {
     padding:0.5rem 1rem
   }
   #toggle {
