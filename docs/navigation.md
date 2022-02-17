@@ -55,4 +55,15 @@ if you set `version` to either `stable` or `dev` for each of the corresponding p
 next, browse to `docs/stable/api.html`. since this page only has a `stable` version, the link to the `dev` version will turn red to indicate that there is no matching page.
 
 {: .caution}
-with `enable_versions` set to `true`, any pages without a `version` property in their front matter will not appear in the navigation at all. don't forget to set your versions!
+with `enable_versions` set to `true`, any pages without a `version` property in their front matter will not appear in the navigation at all.
+
+### categories
+using the `nav_categories` site variable, you can further sort each of your site's pages into one of several unique categories.
+
+first, set `nav_categories` to an array of categories (e.g. `["general", "API reference"]`).\
+then, add a `category` property to the front matter of each page, and set it to one of the categories given in the array.
+
+with categories enabled, **the `nav_order` property changes behavior:** it will determine the page's placement *within its category* instead, and the alphabetically sorted section will not be used.
+
+{: .caution}
+using this feature presents a similar gotcha to the version feature -- any pages without a `category` property will not appear.

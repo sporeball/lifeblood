@@ -61,6 +61,10 @@ the path to your documentation's front page; for example, [victus](https://spore
 this will be used in the navigation.\
 useful for project sites which serve an `index.html` page separate from the project's documentation.
 
+#### nav_categories
+used to sort the navigation into multiple categories.\
+see the [navigation](navigation#categories) page for more information.
+
 #### footer_left
 type: `string`
 
