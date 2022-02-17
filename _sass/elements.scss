@@ -43,10 +43,12 @@ ol li ol li:before {
 }
 
 #markdown-toc:before {
-  content:"Table of Contents";
-  font-variant:small-caps;
+  content:"table of contents";
   position:absolute;
-  margin-top:-1.75rem
+  margin-top:-1.75rem;
+  font-size:13px;
+  text-transform:uppercase;
+  color:var(--color-text-muted)
 }
 
 blockquote {
